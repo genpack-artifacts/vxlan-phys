@@ -1,0 +1,8 @@
+[Match]
+Name=vxlan100
+
+[Network]
+Bridge=br0
+ConfigureWithoutCarrier=yes
+[Link]
+RequiredForOnline=no

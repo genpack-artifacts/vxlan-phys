@@ -1,0 +1,12 @@
+[NetDev]
+Name=wg0
+Kind=wireguard
+
+[WireGuard]
+ListenPort = 51820
+PrivateKey = YOUR_PRIVATE_KEY_HERE
+
+[WireGuardPeer]
+PublicKey = PEERS_PUBLIC_KEY_HERE
+AllowedIPs = 100.64.0.2/32
+PersistentKeepalive = 25

@@ -1,0 +1,23 @@
+{
+    packages: [
+        "genpack/systemimg",
+        "genpack/wireless", // USE WiFi for upstream
+        "net-misc/bridge-utils"
+    ],
+    use: {
+        "genpack/systemimg": "baremetal",
+        "sys-libs/zlib": "minizip"
+    },
+    license:{
+        "sys-kernel/linux-firmware": "linux-fw-redistributable"
+    }
+}
+/*
+# example system.ini
+wifi_ssid=SSID
+wifi_key=PASSWORD
+wifi_wpa3=yes // if use wpa3
+hostname=vxlan-phys
+timezone=Asia/Tokyo
+ssh_pubkey=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICG... user@host
+*/

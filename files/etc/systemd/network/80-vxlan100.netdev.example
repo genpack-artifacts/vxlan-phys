@@ -1,0 +1,8 @@
+[NetDev]
+Name=vxlan100
+Kind=vxlan
+
+[VXLAN]
+VNI=100
+Remote=100.64.0.2
+Independent=yes
